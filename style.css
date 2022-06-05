@@ -17,6 +17,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 10rem;
+
+    @media (max-width: 628px) {
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        gap: 5rem;
 }
 
 .country {
@@ -25,6 +29,10 @@
     position: relative;
 
     perspective: 1500px;
+
+    @media (max-width: 628px) {
+        width: 100px;
+        height: 100px;
 }
 
 .country div {
