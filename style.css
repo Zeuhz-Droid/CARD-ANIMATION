@@ -21,6 +21,7 @@
     @media (max-width: 628px) {
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
         gap: 2rem;
+    }
 }
 
 .country {
@@ -31,8 +32,9 @@
     perspective: 1500px;
 
     @media (max-width: 628px) {
-        width: 300px;
-        height: 300px;
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .country div {
