@@ -17,11 +17,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 10rem;
-
-    @media (max-width: 628px) {
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        gap: 2rem;
-    }
 }
 
 .country {
@@ -30,11 +25,6 @@
     position: relative;
 
     perspective: 1500px;
-
-    @media (max-width: 628px) {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 .country div {
@@ -69,4 +59,19 @@
 
 .country:hover .capital {
     transform: rotateY(0);
+}
+
+@media screen and (max-width : 600px) {
+
+     .country-box {
+         grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+         gap: 2rem;
+      }
+
+     .country {
+         font-size: 13px;
+         width: 100px;
+         height: 100px;
+         white-space: nowrap;
+     }
 }
